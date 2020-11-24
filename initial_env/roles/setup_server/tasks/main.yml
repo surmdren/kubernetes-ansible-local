@@ -1,0 +1,7 @@
+---
+# tasks file for setup_server
+- name: Include tasks 
+  include_tasks: "{{ item }}"
+  loop:
+     - add_user.yml
+     - sudo.yml

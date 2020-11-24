@@ -1,0 +1,6 @@
+---
+- name: Upload the devops sudo template to remote server
+  copy:
+    src: 001_devops
+    dest: /etc/sudoers.d/
+    mode: '0440'
